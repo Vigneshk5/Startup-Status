@@ -1,4 +1,10 @@
 # Startup-Status
+<img width="1080" alt="Screenshot 2024-03-17 at 9 02 25 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/6160990d-b2cd-4340-852d-b3632f64a270">
+<img width="1440" alt="Screenshot 2024-03-17 at 8 43 05 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/255b14d6-535f-4ba8-9880-8629e60956a1">
+<img width="1440" alt="Screenshot 2024-03-17 at 8 43 13 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/ff41501f-d059-4b82-b4df-2ed63e6cada2">
+<img width="1440" alt="Screenshot 2024-03-17 at 8 43 19 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/d595b59d-3fbe-449a-adb7-c358f92125f5">
+<img width="1440" alt="Screenshot 2024-03-17 at 8 42 38 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/a3ff9dbf-327b-438b-8d01-788206eef9a0">
+<img width="1440" alt="Screenshot 2024-03-17 at 8 42 28 PM" src="https://github.com/Vigneshk5/Startup-Status/assets/97999742/e20773dc-0376-4e6a-a1b0-1aabf06eae48">
 
 Welcome to Startup-Status! This web application is designed to assist small-scale businesses or startups in managing their finances, tracking customer details, and managing investor information. It provides features to handle earnings, expenses, customer details, and investor information, enabling the generation of annual reports based on financial data.
 
