@@ -1,2 +1,1 @@
-# mini-dbms
 # Startup-Status
