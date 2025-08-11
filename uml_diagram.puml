@@ -82,4 +82,89 @@ expenses "1" -- "1" daily_profit_loss : date
 profits "1" -- "1" daily_profit_loss : date
 
 @enduml
+@startuml
+
+!theme plain
+
+class customers {
+  + id: SERIAL <<PK>>
+  + type: VARCHAR(255)
+  + age: INT
+  + acquiring_cost: DECIMAL(10, 2)
+  --
+  + getCustomers()
+  + getCustomerById(id)
+  + createCustomer(type, age, acquiringCost)
+  + updateCustomer(id, type, age, acquiringCost)
+  + deleteCustomer(id)
+}
+
+class customer_metadata {
+  + id: SERIAL <<PK>>
+  + customer_id: INT <<PK, FK>>
+  + meta_key: VARCHAR(255)
+  + meta_value: TEXT
+  --
+  + getCustomerMetadata()
+  + getCustomerMetadataById(id)
+  + createCustomerMetadata(customer_id, meta_key, meta_value)
+  + updateCustomerMetadata(id, customer_id, meta_key, meta_value)
+  + deleteCustomerMetadata(id)
+}
+
+class expenses {
+  + id: SERIAL <<PK>>
+  + description: VARCHAR(255)
+  + amount: NUMERIC(10, 2)
+  + date: DATE
+  --
+  + getExpenses()
+  + getExpenseById(id)
+  + createExpense(description, amount, date)
+  + updateExpense(id, description, amount, date)
+  + deleteExpense(id)
+}
+
+class profits {
+  + id: SERIAL <<PK>>
+  + description: VARCHAR(255)
+  + amount: NUMERIC(10, 2)
+  + date: DATE
+  --
+  + getProfits()
+  + getProfitById(id)
+  + createProfit(description, amount, date)
+  + updateProfit(id, description, amount, date)
+  + deleteProfit(id)
+}
+
+class investors {
+  + id: SERIAL <<PK>>
+  + name: VARCHAR(255)
+  + amount_invested: NUMERIC(10, 2)
+  + date: DATE
+  + shares_acquired: INT
+  --
+  + getInvestors()
+  + getInvestorById(id)
+  + createInvestor(name, amount_invested, date, shares_acquired)
+  + updateInvestor(id, name, amount_invested, date, shares_acquired)
+  + deleteInvestor(id)
+}
+
+class daily_profit_loss <<View>> {
+  + date: DATE
+  + total_expense: NUMERIC
+  + total_profit: NUMERIC
+  + profit_left: NUMERIC
+  --
+  + getDailyProfitLoss()
+}
+
+customers "1" -- "0..*" customer_metadata : customer_id
+expenses "1" -- "1" daily_profit_loss : date
+profits "1" -- "1" daily_profit_loss : date
+
+@enduml
+
 
